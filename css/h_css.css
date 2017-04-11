@@ -1,0 +1,35 @@
+.calosc{
+    
+    font-family: 'Advent Pro', sans-serif;
+	color: lightskyblue;
+    font-size: 1.5em;
+    display: flex;
+    align-items: baseline;
+}
+
+body{
+    flex: 1;
+}
+.kolor{
+    flex: 1;
+}
+input[type="submit"] {
+    font-family: 'Advent Pro', sans-serif;
+    color: #ccc;
+    font-size: 20px;
+    padding:5px 5px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    background: url(img/html.png);
+    border-radius: 5px; 
+    opacity: 0;
+}
+nav{
+    flex-direction: column;
+}
+.zegar{
+    text-align: right
+       
+}
