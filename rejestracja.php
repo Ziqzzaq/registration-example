@@ -231,7 +231,7 @@
 		unset($_SESSION['e_regulamin']);
 	}
 	?><br /><br />
-	<div class="g-recaptcha" data-sitekey="6LeBlA0UAAAAANZ7bwqzKHu0wzMij-VLccECXVQR"></div>
+	<div class="g-recaptcha" data-sitekey="6Lf-lhwUAAAAABE-bkE0wBoyr4NeMwnyP59haogK"></div>
 	<?php
 	if(isset($_SESSION['e_bot']))
 	{
