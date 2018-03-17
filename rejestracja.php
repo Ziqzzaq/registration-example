@@ -78,18 +78,7 @@
 			$_SESSION['e_regulamin']="Potwierdź akceptację regulaminu!";
 		}
 
-		//Bot or not? Oto jest pytanie!
-		$sekret = "6LeBlA0UAAAAAG4j4FQcpfeNDIcZojP5juN8dOs7";
 		
-		$sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
-		
-		$odpowiedz = json_decode($sprawdz);
-		
-		if ($odpowiedz->success==false)
-		{
-			$wszystko_OK=false;
-			$_SESSION['e_bot']="Potwierdź, że nie jesteś botem!";
-		}		
 		
 
 
@@ -231,14 +220,6 @@
 		unset($_SESSION['e_regulamin']);
 	}
 	?><br /><br />
-	<div class="g-recaptcha" data-sitekey="6Lf-lhwUAAAAABE-bkE0wBoyr4NeMwnyP59haogK"></div>
-	<?php
-	if(isset($_SESSION['e_bot']))
-	{
-		echo '<div class="error">'.$_SESSION['e_bot'].'</div>';
-		unset($_SESSION['e_bot']);
-	}
-	?><br />
 
 	<input type="submit" value="Zarejestruj się" /> 
 	</form>

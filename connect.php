@@ -1,8 +1,8 @@
 <?php
 
-$host = "mysql.hostinger.pl";
-$db_user = "u357431287_user";
-$db_password = "forget1q2w3";
-$db_name = "u357431287_data";
+$host = "localhost";
+$db_user = "id3477638_root";
+$db_password = "michal1q2w3";
+$db_name = "id3477638_databasetest";
 
 ?>

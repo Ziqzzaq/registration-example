@@ -22,24 +22,8 @@ if(!isset($_SESSION['zalogowany']))
 
 </head>
     <div class="calosc">
-    <div class="kolor">
- <form method="post" action="h.php">
-        Tło 1 
-    	<input type="submit" name="color" value="img/1.jpg" />
-        Tło 2
-        <input type="submit" name="color" value="img/2.png" />
-        Tło 3
-        <input type="submit" name="color" value="img/3.png" />
-    </form>
-     <?php
-    if ( isset( $_POST['color'] ) )
-    {
-    	$color = $_POST['color'];
-    }
-    ?>
-        </div>
 
-    <body onload="odliczanie(); " style="background-image:url(<?php echo $color ?>)"> 
+    <body> 
    <nav>
     <div class="napis">
 	<?php
